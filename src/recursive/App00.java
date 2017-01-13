@@ -26,7 +26,7 @@ public class App00 {
             int tmp=arr[pos];
             arr[pos]=arr[arr.length-pos-1];
             arr[arr.length-pos-1]=tmp;
-            swapArr(arr,++pos);
+            swapArr(arr,pos+1);
         }
 
     }
