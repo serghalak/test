@@ -30,4 +30,8 @@ public class App00 {
         }
 
     }
+
+    public static String getComment(){
+        return "Some first method after clone project to other project";
+    }
 }
