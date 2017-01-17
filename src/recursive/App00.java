@@ -8,9 +8,10 @@ import java.util.Arrays;
 public class App00 {
     public static void main(String[] args){
         //f(1);
-        int[] data={1,2,3,4,5,6,7,8,9};
-        swapArr(data,0);
-        System.out.println(Arrays.toString(data));
+//        int[] data={1,2,3,4,5,6,7,8,9};
+//        swapArr(data,0);
+//        System.out.println(Arrays.toString(data));
+        System.out.println("fib(5)=" + fib(5));
     }
     public static void f(int arg){
         //System.out.println(" " + arg);
@@ -18,6 +19,13 @@ public class App00 {
             f(2*arg);
         }
         System.out.println(" " + arg);
+    }
+
+    public static int fib(int arg){
+
+        int result = (arg <2)? 1 : fib(arg-1)+fib(arg-2);
+        System.out.print(" " + arg);
+        return result;
     }
 
     public static void swapArr(int[] arr,int pos){
